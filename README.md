@@ -8,50 +8,46 @@ Hello world
 
 # 1.Tổng quan
 Comment đơn
-'''
+```
 # Đây là một comment
-'''
-Comment nhiều dòng: sử dụng dấu '"""' 
-'''
+```
+Comment nhiều dòng: sử dụng dấu """ hoặc '''
+```
 """
    Đây là một comment
    nhiều dòng
 """
-'''
+```
 
-# print giá trị
-'''
+# 2.Print giá trị
+```
 print ('Hello world')
-'''
+```
 
 ## 1.1. Variables (Biến)
  - Tên biến trong python phân biệt hoa thường
  - Chỉ chứa các ký tự A-z, 0 - 9, và _
  - Bắt đầu chữ hoặc _, không bắt đầu bằng số
 
+#### Tên biến phân biệt hoa thường
 
-## tên biến phân biệt hoa thường
+```
 a = 5
-
 A = 10
-
 print(a,A)
+```
 
-#Gán giá trị cho biến. Biến python không quy định khai báo kiểu dữ liệu khi khai báo biến
-
+##### Gán giá trị cho biến. Biến python không quy định khai báo kiểu dữ liệu khi khai báo biến
+```
 a = 7
-
 print(a)
-
 a = 'hello'
 print(a)
-
 a = [1,3,4]
 print(a)
-
 a = [1, 'hello', 1.3]
 print (a)
-
+```
 - Gán 1 giá trị cho nhiều biến
 x = y = z = "One"
 print('Gán một giá trị cho nhiều biến:', 'x:', x, 'y:', y, 'z:', z)
