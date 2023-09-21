@@ -6,33 +6,41 @@
 Hello world
 5 10
 
-
-# -*- coding: utf-8 -*-
-
-*văn bản in nghiêng*# 1.Tổng quan
-
+# 1.Tổng quan
+Comment đơn
+'''
 # Đây là một comment
+'''
+Comment nhiều dòng: sử dụng dấu '"""' 
+'''
 """
    Đây là một comment
    nhiều dòng
 """
+'''
 
-#print giá trị
+# print giá trị
+'''
 print ('Hello world')
+'''
 
-"""## 1.1. Variables (Biến)
+## 1.1. Variables (Biến)
  - Tên biến trong python phân biệt hoa thường
  - Chỉ chứa các ký tự A-z, 0 - 9, và _
  - Bắt đầu chữ hoặc _, không bắt đầu bằng số
-"""
 
-# tên biến phân biệt hoa thường
+
+## tên biến phân biệt hoa thường
 a = 5
+
 A = 10
+
 print(a,A)
 
 #Gán giá trị cho biến. Biến python không quy định khai báo kiểu dữ liệu khi khai báo biến
+
 a = 7
+
 print(a)
 
 a = 'hello'
@@ -44,15 +52,15 @@ print(a)
 a = [1, 'hello', 1.3]
 print (a)
 
-#Gán 1 giá trị cho nhiều biến
+- Gán 1 giá trị cho nhiều biến
 x = y = z = "One"
 print('Gán một giá trị cho nhiều biến:', 'x:', x, 'y:', y, 'z:', z)
 
-#Gán nhiều giá trị cho nhiều biến
+- Gán nhiều giá trị cho nhiều biến
 x = y = z = "One", "Two", "Three"
 print('Gán nhiều giá trị cho nhiều biến:', 'x:', x, 'y:', y, 'z:', z)
 
-#Gán 1 mảng cho nhiều biến
+- Gán 1 mảng cho nhiều biến
 number = ["One", "Two", "Three"]
 x = y = z = number
 print('Gán 1 mảng cho nhiều biến:', 'x:', x, 'y:', y, 'z:', z)
