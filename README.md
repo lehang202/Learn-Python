@@ -1,12 +1,6 @@
 # Learn-Python
 
 # 1.Tổng quan
-
-'\n   Đây là một comment\n   nhiều dòng\n'
-Hello world
-5 10
-
-# 1.Tổng quan
 Comment đơn
 ```
 # Đây là một comment
@@ -19,25 +13,22 @@ Comment nhiều dòng: sử dụng dấu """ hoặc '''
 """
 ```
 
-# 2.Print giá trị
+## 1.1.Print giá trị
 ```
 print ('Hello world')
 ```
 
-## 1.1. Variables (Biến)
+## 1.2. Variables (Biến)
  - Tên biến trong python phân biệt hoa thường
  - Chỉ chứa các ký tự A-z, 0 - 9, và _
  - Bắt đầu chữ hoặc _, không bắt đầu bằng số
-
-#### Tên biến phân biệt hoa thường
-
+ - Tên biến phân biệt hoa thường
 ```
 a = 5
 A = 10
 print(a,A)
 ```
-
-##### Gán giá trị cho biến. Biến python không quy định khai báo kiểu dữ liệu khi khai báo biến
+- Gán giá trị cho biến. Biến python không quy định khai báo kiểu dữ liệu khi khai báo biến
 ```
 a = 7
 print(a)
@@ -49,28 +40,30 @@ a = [1, 'hello', 1.3]
 print (a)
 ```
 - Gán 1 giá trị cho nhiều biến
+```
 x = y = z = "One"
 print('Gán một giá trị cho nhiều biến:', 'x:', x, 'y:', y, 'z:', z)
-
+```
 - Gán nhiều giá trị cho nhiều biến
+```
 x = y = z = "One", "Two", "Three"
 print('Gán nhiều giá trị cho nhiều biến:', 'x:', x, 'y:', y, 'z:', z)
-
+```
 - Gán 1 mảng cho nhiều biến
+```
 number = ["One", "Two", "Three"]
 x = y = z = number
 print('Gán 1 mảng cho nhiều biến:', 'x:', x, 'y:', y, 'z:', z)
-
-"""## 1.2. Data Types (Kiểu dữ liệu)
-- Text:	str
+```
+## 1.3. Data Types (Kiểu dữ liệu)
+- Text:	`str`
 - Numeric:	`int, float, complex`
 - Sequence:	`list, tuple, range`
 - Mapping:	`dict`
 - Set:	`set, frozenset`
 - Boolean:	`bool`
 - Binary:	`bytes, bytearray, memoryview`
-"""
-
+```
 x = "Hello world" #str
 print(x, type(x))
 
@@ -113,12 +106,12 @@ print(x, type(x))
 
 #x = memoryview(bytes(5))
 #print(x, type(x))
+```
 
-"""## 1.3. Cast (Ép kiểu)
+## 1.4. Cast (Ép kiểu)
 
-"""
-
-#Chuyển số --> chuỗi
+- Chuyển số --> chuỗi
+```
 i = 2
 print(i)
 str(i)
@@ -126,14 +119,13 @@ str(i)
 x = 1    # int
 y = 2.8  # float
 z = 1j   # complex
-
-#convert from int to float:
+```
+```
+- convert from int to float:
 a = float(x)
-
-#convert from float to int:
+- convert from float to int:
 b = int(y)
-
-#convert from int to complex:
+- convert from int to complex:
 c = complex(x)
 
 print(a)
@@ -143,10 +135,10 @@ print(c)
 print(type(a))
 print(type(b))
 print(type(c))
+```
+## 2.Operators (Toán tử)
 
-"""# 2.Operators (Toán tử)
-
-## 2.1. Arithmetic Operators (Toán tử số học)
+### 2.1. Arithmetic Operators (Toán tử số học)
 - Phép cộng (+)
 - Phép trừ (-)
 - Phép nhân (*)
@@ -154,9 +146,9 @@ print(type(c))
 - Phép chia lấy dư (modulus) (%)
 - Luỹ thừa (**)
 - Chia lấy nguyên (//)
-"""
 
-# toán tử số học:
+#### toán tử số học:
+```
 n = 7
 print ("n: ", n)
 print ("n + 7: ", n + 7)
@@ -166,13 +158,12 @@ print ("n / 2:",n / 2)
 print ("n % 2:",n % 2)
 print ("n //2:", n//2)
 print ("n ** 2:", n**2 )
-
-"""## 2.2. Assignment Operators (Toán tử gán)
+```
+### 2.2. Assignment Operators (Toán tử gán)
 - Gán (=)
 - (+=), (-=), (\*=), (/=), (%=), (//=), (\**=)
 - (&=), (|=), (^=), (>>=), (<<=)
-"""
-
+```
 n = 3
 print (n)
 
@@ -199,38 +190,35 @@ print(n)
 
 n **= 2 # n = n ** 2 = 3 ** 2 = 9
 print(n)
+```
+### 2.3. Comparison Operators (Toán tử so sánh)
 
-"""## 2.3. Comparison Operators (Toán tử so sánh)
 Dùng để so sánh 2 giá trị
 - Equal (So sánh bằng) (==)
 - Not Equal (So sánh khác) (!=)
 - (>), (<), (>=), (<=)
-
-"""
-
+```
 x = 5
 y = 7
 print (x == y, x != y, x > y, x < y, x >=5, y <= 7)
-
-"""## 2.4. Logical Operators (Toán tử logic)
+```
+### 2.4. Logical Operators (Toán tử logic)
 Dùng để kết nối 2 mệnh đề điều kiện
 - And
 - Or
 - Not
-"""
-
+```
 x = 5
 y = 7
 print (x > 3 and x < 7) # (5 > 3 and 5 < 7) --> (true and true) --> true
 print (y > 10 or y > x) # (7 > 10 or 7 > 5) --> (false or true) --> true
 print ( not(y > 7)) # not( 7 > 7) --> not (false) --> true
-
-"""## 2.5. Identity Operators
+```
+### 2.5. Identity Operators
 Dùng để so sánh 2 đối tượng (object), có thể giá trị bằng nhau nhưng không cùng chung bộ nhớ.
 - is
 - is not
-"""
-
+```
 #number
 x = 5
 y = 5
@@ -251,13 +239,12 @@ print (x is y, x == y, z is x)
 print (id(x), id(y), id(z)) #xuất danh sách địa chỉ vùng nhớ lưu trữ giá trị của biến,
 #x và y cùng giá trị nhưng khác địa chỉ vùng nhớ
 #x và z cùng địa chỉ vùng nhớ
-
-"""## 2.6. Membership Operators
+```
+### 2.6. Membership Operators
 Dùng trong trường hợp kiểm tra 1 chuỗi (sequence) có tồn tại trong 1 đối tượng (Object) hay không
  - in
  - not in
-"""
-
+```
 s = "Hello world"
 print ("Hello" in s)
 
@@ -266,42 +253,35 @@ print (1 in arr)
 
 arr = ["One", "Two", "Three"]
 print ("one" in arr, "One" in arr)
-
-"""## 2.7. Bitwise Operators (Toán tử trên bit)
+```
+### 2.7. Bitwise Operators (Toán tử trên bit)
  - AND (&): bằng 1 khi cả 2 bit đều bằng 1
  - OR (|): bằng 1 khi 1 trong 2 bit, hoặc cả 2 bit = 1
  - NOT (~)
  - XOR (^): bằng 1 khi chỉ 1 trong 2 bit = 1
  - Shift left (<<): dịch n bit 0 sang trái
  - Shift right (>>): dịch n bit 0 sang phải
-"""
-
+```
 n = 5 #binary: 0101
 print (n & 1) # 0101 & 0001 = 0001 (bin) = 1 (dec)
 print (n | 1) # 0101 | 0001 = 0101 (bin) = 5 (dec)
 print (n ^ 1) # 0101 ^ 0001 = 0100 (bin) = 4 (dec)
 print (n >> 1) # 0101 >> 1 = 0010 (bin) = 2 (dec)
 print (n << 1) # 0101 << 1 = 1010 (bin) = 10 (dec)
-
-"""# 3.Collections (Arrays)
+```
+## 3.Collections (Arrays)
 - List: là một tập hợp được sắp xếp và có thể thay đổi. Cho phép các thành viên trùng lặp.
 - Tuple: là một tập hợp có thứ tự và không thể thay đổi (immutable). Cho phép các thành viên trùng lặp.
 - Set: là một tập hợp không có thứ tự và không được lập chỉ mục. Không có thành viên trùng lặp.
 - Dictionary: là một tập hợp không có thứ tự và có thể thay đổi. Không có thành viên trùng lặp.
 
-## List
-"""
-
-
-
-"""## 3.2. Tuple
-
-## 3.3. Set
+### List
+### 3.2. Tuple
+### 3.3. Set
 Set is an unordered collection of unique items. Set is defined by values separated by comma inside braces { }. Items in a set are not ordered.
 
 Ref: https://www.programiz.com/python-programming/variables-datatypes
-"""
-
+```
 a = {5,2,3,1,4}
 
 # printing set variable
@@ -329,8 +309,8 @@ print("intersection:", set1 & set2)
 print("union:", set1 | set2)
 print("difference:", set1 - set2)
 print("symmetric difference:", set1 ^ set2)
-
-"""# 4.If ... Else
+```
+## 4.If ... Else
 Cú pháp
 Block code trong python dựa vào thụt đầu dòng (indentation) thay cho {} như các ngôn ngữ khác
 
@@ -343,8 +323,7 @@ else:
   block code
 ```
 **Python ko có cú pháp switch case**
-"""
-
+```
 #Ví dụ If... Elif ... Else
 diem = 7
 xepLoai = ""
@@ -367,28 +346,26 @@ if a > b: print ("A>B")
 
 #if, else
 print ("A > B") if a > b else print ("B >= A")
-
-"""# 5.Loop
+```
+## 5.Loop
 - while
 - for
 
-## 5.1. While
+### 5.1. While
 Cú pháp:
-
-
 ```
 while condition:
   block code
 ```
-"""
-
-# while
+- while
+```
 i = 1
 while i < 10:
   print(i)
   i += 1
-
-#continue: dùng trong trường hợp skip 1 bước lập chuyển qua bước tiếp theo
+```
+- continue: dùng trong trường hợp skip 1 bước lập chuyển qua bước tiếp theo
+```
 i = 1
 while i < 10:
   if i % 2 == 0:
@@ -396,16 +373,17 @@ while i < 10:
     continue
   print(i)
   i += 1
-
-#break: dùng trong trường hợp thoát khỏi vòng lập
+```
+- break: dùng trong trường hợp thoát khỏi vòng lập
+```
 i = 1
 while i < 10:
   if i == 7:
     break
   print(i)
   i += 1
-
-"""## 5.2. For
+```
+### 5.2. For
 Khác với các ngôn ngữ khác, for trong python sẽ duyệt các phần tử (tương tự for each)
 
 Cú pháp
@@ -413,14 +391,10 @@ Cú pháp
 for x in sequence
   block code
 ```
-
-
 **Ngoài ra, for trong python còn có các từ khoá:**
 - Else
 - pass
-
-"""
-
+```
 fruits = ["apple", "banana", "cherry"]
 for x in fruits:
   print(x)
@@ -460,10 +434,10 @@ for x in [0, 1, 2]:
 A = 'W'
 B = '12345678'
 print({b for b in B})
-
-"""# 6.Function (Hàm)
+```
+## 6.Function (Hàm)
 Khai báo hàm theo cú pháp:
-
+```
 > def functionname(param, param2,..):
 >> statements(s)
 
@@ -471,7 +445,6 @@ Hàm nếu không trả dữ liệu thì mặc định sẽ trả về giá tr�
 
 Ref: Python cơ bản - Võ Duy Tuấn
 
-"""
 
 def sum(a,b):
  return a+b
@@ -503,3 +476,4 @@ printNum (b = 5, a = 2)
 
 import itertools
 dir(itertools)
+```
